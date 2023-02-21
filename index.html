@@ -4,9 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <title>TK Photography</title>
 </head>
 <body>
-    
-</body>
+    <header>
+        <h1>TK Photography</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#top">TOP</a></li>
+        </ul>    
+    </nav>
+            <article id="about">
+                <h2>ABOUT</h2>
+                <p>Hello! </p>
+                <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+            </article>
+            <main>
+                <section id="gallerytxt">
+                    <h2>GALLERY</h2>
+                    <p>Here are some highlights of my work. The locations and year are in the caption. </p>
+                </section>
+                <div id="columnscontainer">
+                    <section>
+                        <figure class="column">
+                            <img class="img_1" src="../photogallery/images/Chile.png" alt="Chile, 2001">
+                            <figcaption>Chile, 2001</figcaption>
+                        </figure>
+                    </section>
+
+                    <section>
+                        <figure class="column">
+                            <img class="img_2" src="../photogallery/images/Guatemala.png" alt="Guatemala, 1997">
+                            <figcaption>Guatemala, 1997</figcaption> 
+                        </figure>
+                    </section>
+
+                    <section>
+                        <figure class="column">
+                            <img class="img_3" src="../photogallery/images/Hawaii.png">
+                            <figcaption>Hawaii, 2010</figcaption>
+                        </figure>
+                    </section>
+
+                    <section>
+                        <figure class="column">
+                            <img class="img_4" src="../photogallery/images/Iran.png">
+                            <figcaption>Iran, 1999</figcaption>
+                        </figure>
+                    </section>
+                    
+                    <section>
+                        <figure class="column">
+                            <img class="img_5" src="../photogallery/images/Ireland.png">
+                            <figcaption>Ireland, 2012</figcaption>
+                        </figure>
+                    </section>
+
+                    <section>
+                        <figure class="column">
+                            <img class="img_6" src="../photogallery/images/Italy.png">
+                            <figcaption>Italy, 2015</figcaption>    
+                        </figure>
+                    </section>
+
+                    <section>
+                        <figure class="column">
+                            <img class="img_7" src="../photogallery/images/Moab-Desert.png">
+                            <figcaption>Moab Desert, 2020</figcaption>
+                        </figure>
+                    </section>
+                    
+                    <section>
+                        <figure class="column">
+                            <img class="img_8" src="../photogallery/images/Rocky-Mountains.png">
+                            <figcaption>Rocky Mountains, 2009</figcaption>
+                        </figure>
+                    </section>
+                    
+                    <section>
+                        <figure class="column">
+                            <img class="img_9" src="../photogallery/images/Switzerland.png">
+                            <figcaption>Switzerland, 2014</figcaption>
+                        </figure>
+                    </section>
+                    
+                    <section>
+                        <figure class="column">
+                            <img class="img_10" src="../photogallery/images/UK.png">
+                            <figcaption>UK, 2005</figcaption> 
+                        </figure>
+                    </section>
+                    
+                    <section>
+                        <figure class="column">
+                            <img class="img_11" src="../photogallery/images/USA.png">
+                            <figcaption>USA, 2021</figcaption>   
+                        </figure>
+                    </section>    
+
+                    <section>
+                        <figure class="column">
+                            <img class="img_12" src="../photogallery/images/Wyoming.png">
+                            <figcaption>Wyoming, 2021</figcaption> 
+                        </figure>  
+                    </section>
+                </div>
+
+                <section class="contacttxt">
+                    <h2>Contact</h2>
+                    <p>Please fill out this form and I’ll connect with you soon.</p>
+                </section>
+
+                <section id="form">
+                    <form action="#">
+                        <!--Your contact information-->
+                        <p>
+                            <label for="name">NAME</label><br>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </p>
+                        <p>
+                            <label for="email">EMAIL</label><br>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </p>
+                        <p id="comments">
+                            <label for="comments">MESSAGE</label><br>
+                            <textarea name="message" placeholder="What can I help you with?"></textarea>
+                        </p>
+        
+                        <p>
+                            <input type="submit" id="submit" value="Submit">	
+                        </p>
+                    </form>
+                </section>  
+            </main> 
+        <footer>
+            <small>Copyright 2021 TK Photography</small> 
+        </footer>  
+    </body>
 </html>
