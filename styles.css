@@ -173,6 +173,9 @@ figure:nth-child(even) {
 section > .hidden{
     display: none;
 }
+form > .hidden{
+    display: none;
+}
 
 #columnscontainer{
     display: grid;
