@@ -59,8 +59,8 @@ body {
     margin: 0 auto;
     min-width: 485px;
     max-width: 1300px;
-    align-items center
-  justify-content center
+    align-items: center;
+    justify-content: center;
     background-color: black;
     line-height: 1;
 }
@@ -139,16 +139,33 @@ p ~ p {
     background-color: #ffffff;
 }
 
+/* FIGURE STYLES */
+
+figcaption{
+    position: relative;
+    top: -260px;  
+}
+
+section:nth-of-type(2n) {
+    text-align: center;
+    color:white;
+    
+}
+
+
+
+
+
+
+    
+
+
+
 #columnscontainer{
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
     padding-bottom: 20px;
-}
-
-li:nth-child (even) {
-    color: #FFFFFF;
-    position: relative;
 }
 
 .contacttxt{
@@ -163,10 +180,13 @@ li:nth-child (even) {
     padding-top: 20px;
 }
 
+/* FORM STYLES */
+
 form{
     display: grid;
-      place-items: center;
+    place-items: center;
 }
+
 #form{
     background-color: black;
     color: #ffffff;
@@ -175,12 +195,20 @@ form{
 
 input, select, textarea{
 	padding: 10px;
+    padding-bottom: 10px;
+    width: 350px;
 	font-size: 16px;
 	margin-bottom: 24px;
 	border-radius: 4px;
 	inset: 1px;
-	border: #196774;
+	border: #007d7b;
 }
+
+::placeholder {
+    color: #007d7b;
+    opacity: 1;
+  }
+
 
 #submit{
     color: white;
@@ -192,12 +220,19 @@ input, select, textarea{
     width: 7em;
 }
 
+
+
 footer{
     color: #ffffff;
     padding-top: 30px;
     padding-bottom: 15px;
     text-align: center;
 }
+
+section:nth-of-type(2n) {
+    color:white;
+}
+
 
 /* RESPONSIVE LAYOUTS */
 
@@ -212,6 +247,45 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    input, select, textarea{
+        padding: 10px;
+        padding-bottom: 10px;
+        width: 750px;
+        font-size: 16px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        inset: 1px;
+        border: #007d7b;
+        padding: 12px 20px;
+        margin: 8px 0;
+    }
+
+    label {
+        display: block;
+        float: left;
+      }
+
+    #submit{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        background: #007d7b;
+        border-radius: 8px;
+        height: 30px;
+        width: 25em;
+    }
+
+    figcaption{
+        text-align: center;
+    }
+
+    section:nth-of-type(2n) {
+        color:white;
+    }
+
+
+  
     
 }
 /* Large Screen */
@@ -227,7 +301,69 @@ footer{
         position: relative;
     }
 
+    header{
+        background-color: white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 100px;
+        padding-right: 850px;
+        float: left;
+    }
 
+    h1{
+        color:#007d7b;
+        padding-bottom: 10px;
+        float: left;
+    }
+
+    nav{
+        border:1px solid #ccc;
+        border-width:1px 0;
+        
+        margin:0;
+        padding:0;
+        text-align:right;
+        padding-top: 70px;
+    }
+    nav li{
+        display:inline;
+    }
+
+    nav a{
+        display:inline-block;
+        padding:30px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    input, select, textarea{
+        padding: 10px;
+        padding-bottom: 10px;
+        width: 1000px;
+        font-size: 16px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+        inset: 1px;
+        border: #007d7b;
+    }
+
+    figcaption{
+        position: relative;
+        text-align: center;
+        top: -260px;
+    }
+   
+
+    section:nth-of-type(2n) {
+        color:white;
+    }
+
+    .long_img{
+        position: relative;
+        top: -560;
+    }
+    
     
 
 

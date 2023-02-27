@@ -30,7 +30,7 @@
                     <p>Here are some highlights of my work. The locations and year are in the caption. </p>
                 </section>
                 <div id="columnscontainer">
-                    <section>
+                    <section class="column">
                         <figure class="column">
                             <img class="img_1" src="../photogallery/images/Chile.png" alt="Chile, 2001">
                             <figcaption>Chile, 2001</figcaption>
@@ -54,21 +54,21 @@
                     <section>
                         <figure class="column">
                             <img class="img_4" src="../photogallery/images/Iran.png">
-                            <figcaption>Iran, 1999</figcaption>
+                            <figcaption class="long_img">Iran, 1999</figcaption>
                         </figure>
                     </section>
                     
                     <section>
                         <figure class="column">
                             <img class="img_5" src="../photogallery/images/Ireland.png">
-                            <figcaption>Ireland, 2012</figcaption>
+                            <figcaption class="long_img">Ireland, 2012</figcaption>
                         </figure>
                     </section>
 
                     <section>
                         <figure class="column">
                             <img class="img_6" src="../photogallery/images/Italy.png">
-                            <figcaption>Italy, 2015</figcaption>    
+                            <figcaption class="long_img">Italy, 2015</figcaption>    
                         </figure>
                     </section>
 
@@ -124,20 +124,34 @@
                     <form action="#">
                         <!--Your contact information-->
                         <p>
-                            <label for="name">NAME</label><br>
-                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            <div>
+                                <label for="name">NAME</label><br>
+                            </div>
+                            <div>
+                                <input type="text" id="name" name="name" placeholder="YOUR FULL NAME" required>
+                            </div>
                         </p>
                         <p>
-                            <label for="email">EMAIL</label><br>
-                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <div>
+                                <label for="email">EMAIL</label><br>
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+                            </div>
                         </p>
                         <p id="comments">
-                            <label for="comments">MESSAGE</label><br>
-                            <textarea name="message" placeholder="What can I help you with?"></textarea>
+                            <div>
+                                <label for="comments">MESSAGE</label><br>
+                            </div>
+                            <div>
+                                <textarea name="message" placeholder="WHAT CAN I HELP YOU WITH?"></textarea>
+                            </div>
                         </p>
         
                         <p>
-                            <input type="submit" id="submit" value="Submit">	
+                            <div>
+                                <input type="submit" id="submit" value="Submit">
+                            </div>	
                         </p>
                     </form>
                 </section>  
