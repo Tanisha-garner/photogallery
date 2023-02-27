@@ -143,13 +143,30 @@ p ~ p {
 
 figcaption{
     position: relative;
-    top: -260px;  
+    justify-content: center;
+    text-align: center;
+    top: -260px;
 }
 
-section:nth-of-type(2n) {
-    text-align: center;
-    color:white;
-    
+section:nth-of-type(odd) {
+    color: white;
+}
+
+figure:nth-child(even) {
+    top: -160px;
+}
+
+.long_img{
+    position: relative;
+    top: -560px;
+}
+
+.bottomcap{
+    top: -50px;
+}
+
+section > h2{
+    display: none;
 }
 
 
@@ -229,10 +246,6 @@ footer{
     text-align: center;
 }
 
-section:nth-of-type(2n) {
-    color:white;
-}
-
 
 /* RESPONSIVE LAYOUTS */
 
@@ -277,17 +290,21 @@ section:nth-of-type(2n) {
     }
 
     figcaption{
+        position: relative;
         text-align: center;
+        top: -260px;
+    }
+   
+    section:nth-of-type(odd) {
+        color: white;
     }
 
-    section:nth-of-type(2n) {
-        color:white;
-    }
-
-
-  
-    
+    .long_img{
+        position: relative;
+        top: -560px;
+    }   
 }
+
 /* Large Screen */
 @media screen and (min-width:1300px){
     #columnscontainer{
@@ -354,19 +371,15 @@ section:nth-of-type(2n) {
         top: -260px;
     }
    
-
-    section:nth-of-type(2n) {
-        color:white;
+    section:nth-of-type(odd) {
+        color: white;
     }
-
+            
     .long_img{
         position: relative;
-        top: -560;
+        top: -560px;
     }
     
-    
-
-
 }
 
 
