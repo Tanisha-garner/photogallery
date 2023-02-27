@@ -137,6 +137,11 @@ p ~ p {
     padding-bottom: 10px;
     text-align: center;
     background-color: #ffffff;
+    color: black;
+}
+
+#gallerytxt ~ h2{
+    visibility: visible;
 }
 
 /* FIGURE STYLES */
@@ -165,18 +170,9 @@ figure:nth-child(even) {
     top: -50px;
 }
 
-section > h2{
+section > .hidden{
     display: none;
 }
-
-
-
-
-
-
-    
-
-
 
 #columnscontainer{
     display: grid;
@@ -236,8 +232,6 @@ input, select, textarea{
 	height: 30px;
     width: 7em;
 }
-
-
 
 footer{
     color: #ffffff;
